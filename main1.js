@@ -9,8 +9,8 @@ function randomValueFromArray(array){
 
 let storyText = '気温は摂氏-1度で外は寒かった。:insertx:は出かけた。:inserty:に着いたら,:insertz:。体重50kgのBobは驚いたが、:insertx:は驚かなかった。:inserty:ではよくあることだった';
 let insertX = ['ねこ','いぬ','くま'];
-let insertY = ['the soup kitchen','Disneyland','the White House'];
-let insertZ = ['spontaneously combusted','melted into a puddle on the sidewalk','turned into a slug and crawled away'];
+let insertY = ['東京','名古屋','大阪'];
+let insertZ = ['混雑していた','とても寒かった','雪が降っていた'];
 
 randomize.addEventListener('click', result);
 
