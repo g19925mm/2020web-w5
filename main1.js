@@ -24,6 +24,7 @@ function result() {
   newStory = newStory.replace(':insertx:',xItem);
   newStory = newStory.replace(':insertx:',xItem);
   newStory = newStory.replace(':inserty:',yItem);
+  newStory = newStory.replace(':inserty:',yItem);
   newStory = newStory.replace(':insertz:',zItem);
 
   if(customName.value !== '') {
@@ -31,11 +32,11 @@ function result() {
     newStory = newStory.replace('Bob',name);
   }
 
-  if(document.getElementById("us").checked) {
-    const weight = Math.round(300*0.0714286) + ' stone';
-    const temperature =  Math.round((94-32) * 5 / 9) + ' centigrade';
-    newStory = newStory.replace('94 fahrenheit',temperature);
-    newStory = newStory.replace('300 pounds',weight);
+  if(document.getElementById("日本").checked) {
+    const weight = Math.round(300*0.0714286) + 'ポンド';
+    const temperature =  '華氏'Math.round((94-32) * 5 / 9);
+    newStory = newStory.replace('摂氏-1',temperature);
+    newStory = newStory.replace('体重50kg',weight);
   }
 
   story.textContent = newStory;
