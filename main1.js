@@ -32,7 +32,7 @@ function result() {
     newStory = newStory.replace('Bob',name);
   }
 
-  if(document.getElementById("日本").checked) {
+  if(document.getElementById("us").checked) {
     const weight = Math.round(50*2.2046) + 'ポンド';
     const temperature = '華氏' + Math.round(((-1)*9/5)+32);
     newStory = newStory.replace('摂氏-1',temperature);
